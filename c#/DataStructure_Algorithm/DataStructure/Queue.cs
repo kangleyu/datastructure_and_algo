@@ -51,10 +51,10 @@ namespace DataStructure
         private int _head;
         private int _tail;
 
-        public Queue()
+        public Queue(int capacity = 0)
         {
-            _capaticy = DEFAULT_CAPACITY;
-            _internal = new T[DEFAULT_CAPACITY];
+            _capaticy = capacity == 0 ? DEFAULT_CAPACITY : capacity;
+            _internal = new T[_capaticy];
             _head = 0;
             _tail = -1;
         }
