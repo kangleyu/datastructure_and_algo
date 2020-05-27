@@ -57,6 +57,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedListFixture.cs" />
     <Compile Include="StackFixture.cs" />
     <Compile Include="QueueFixtures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

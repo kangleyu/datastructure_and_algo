@@ -135,5 +135,11 @@
     <Folder Include="ViewModel\" />
     <Folder Include="View\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithm\Algorithm.csproj">
+      <Project>{bf655c88-3fe3-4e96-af31-925d2b593b51}</Project>
+      <Name>Algorithm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F2619A6-F927-466F-BB2E-E0A71A60AE82}</ProjectGuid>
+    <ProjectGuid>{02B3DC64-BCDF-4AF5-8D84-08BA5C681AC2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataStructure</RootNamespace>
-    <AssemblyName>DataStructure</AssemblyName>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,25 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DualLinkedList.cs" />
-    <Compile Include="DualLinkedListNode.cs" />
-    <Compile Include="LinkedList.cs" />
-    <Compile Include="LinkedListNode.cs" />
-    <Compile Include="Tree\AVLTree.cs" />
-    <Compile Include="Tree\BinaryTree.cs" />
-    <Compile Include="Tree\BinaryTreeNode.cs" />
-    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="ArgumentValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queue.cs" />
-    <Compile Include="Stack.cs" />
-    <Compile Include="Tree\Tree.cs" />
-    <Compile Include="Tree\TreeNode.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{02b3dc64-bcdf-4af5-8d84-08ba5c681ac2}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
